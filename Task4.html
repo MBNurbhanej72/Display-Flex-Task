@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1a6ccc;
+            height: 60px;
+            padding: 20px;
+            color: white;
+        }
+
+        header .nav-details {
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        header li {
+            margin: 10px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.758);
+        }
+
+        .line {
+            height: 25px;
+            width: 3px;
+            background-color: #1762ba;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            font-size: 13px;
+        }
+
+        .profile img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .container {
+            background-color: #edf2f7;
+            height: 165vh;
+            display: flex;
+            padding: 0 100px;
+        }
+
+        .first {
+            width: 30%;
+            height: 450px;
+            display: flex;
+            justify-content: end;
+            margin: 25px 15px 0 0;
+        }
+
+        .first .first-data {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .menu ul {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        .menu li {
+            margin-bottom: 25px;
+            color: #726d6d;
+        }
+
+        .copyright p {
+            font-size: 10px;
+            color: #a4a4a4;
+        }
+
+        .second {
+            width: 100%;
+            height: 200px;
+            margin: 25px 0 0 15px;
+        }
+
+        .top {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .top-top .text {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
+
+        .top-top .text h3 {
+            color: #1a6ccc;
+        }
+
+        .top-top .text p {
+            color: #726d6d;
+            font-size: 12px;
+        }
+
+        .persons {
+            padding: 0 20px 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0 10px;
+        }
+
+        .persons .person {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 25%;
+            margin-bottom: 25px;
+        }
+
+        .person img {
+            border-radius: 50%;
+        }
+
+        .person-data h5 {
+            color: #565656;
+        }
+
+        .person-data p {
+            font-size: 12px;
+            color: #726d6dd4;
+        }
+
+        hr {
+            height: 0.5px;
+            border: none;
+            background-color: #ccc;
+        }
+
+        .top-bottom {
+            padding: 20px;
+        }
+
+        .top-bottom .text {
+            color: #1a6ccc;
+            padding: 0px 22px;
+        }
+
+        .squares {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .four {
+            width: 50%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .four:nth-child(1),
+        .four:nth-child(2) {
+            margin-bottom: 20px;
+        }
+
+        .square {
+            height: 80px;
+            width: 110px;
+            background-color: #1a6ccc;
+            border-radius: 5px;
+        }
+
+        .s-one {
+            color: #726d6d;
+        }
+
+        .s-two {
+            color: #726d6db0;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .s-two span {
+            color: #1a6ccc;
+        }
+
+        .bottom {
+            width: 100%;
+            margin-top: 25px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .bottom-top {
+            padding: 20px;
+        }
+
+        .bottom-top .text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .bottom-top .text h3 {
+            color: #1a6ccc;
+            padding: 0px 22px;
+        }
+
+        .form input {
+            width: 86%;
+            border-radius: 20px;
+            border: 1.5px solid #ccc;
+            height: 30px;
+            padding: 10px;
+        }
+
+        .form button {
+            height: 30px;
+            width: 13%;
+            padding: 5px;
+            background-color: #1a6ccc;
+            color: white;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .bottom-bottom {
+            padding: 20px 0;
+        }
+
+        .square-two {
+            display: flex;
+            justify-content: center;
+        }
+
+        .three {
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .square-2 {
+            height: 120px;
+            width: 200px;
+            background-color: #1a6ccc;
+            border-radius: 5px;
+        }
+
+        .s-data .s-one {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h3>iShadeed Store.</h3>
+        </div>
+        <div class="nav-details">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Works</li>
+                </ul>
+            </nav>
+            <div class="line"></div>
+            <div class="profile">
+                <p>Ahmad Shadeed</p>
+                <img src="Person1.jpg" alt="Image">
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="first">
+            <div class="first-data">
+                <div class="menu">
+                    <ul>
+                        <li>Cart</li>
+                        <li>Coupons</li>
+                        <li>Favourite Items</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>iShadeed © 2019 <br>
+                        Privacy Policy • Terms and Conditions</p>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="top">
+                <div class="top-top">
+                    <div class="text">
+                        <h3>Top Sellers</h3>
+                        <p>Filter By</p>
+                    </div>
+                    <div class="persons">
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <img src="Person1.jpg" alt="" height="50px" width="50px">
+                            <div class="person-data">
+                                <h5>John Smith</h5>
+                                <p>154 orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="top-bottom">
+                    <div class="text">
+                        <h3>Top Articles</h3>
+                    </div>
+                    <div class="squares">
+                        <div class="four">
+                            <div class="square"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                        <div class="four">
+                            <div class="square"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                        <div class="four">
+                            <div class="square"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                        <div class="four">
+                            <div class="square"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottom-top">
+                    <div class="text">
+                        <h3>Latest Bla Bla</h3>
+                        <div class="form">
+                            <form>
+                                <input type="text" placeholder="What are you looking for?">
+                                <button type="button">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom-bottom">
+                    <div class="square-two">
+                        <div class="three">
+                            <div class="square-2"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div class="square-2"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div class="square-2"></div>
+                            <div class="s-data">
+                                <p class="s-one">How to design in a logo in <br>
+                                    5 steps</p>
+                                <p class="s-two">By <span>Ahmad Shadeed</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f7f8f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        li {
+            margin: 20px;
+            color: #556987;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            color: #556987;
+        }
+
+        button {
+            height: 28px;
+            width: 70px;
+            margin-left: 20px;
+            background-color: #22c55e;
+            border: none;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .container {
+            margin-top: 80px;
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .title {
+            width: 35%;
+            margin: 30px;
+            color: #556987;
+            font-weight: 600;
+        }
+
+        .lorem {
+            margin: 20px 0;
+        }
+
+        .li {
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 4px;
+            width: 35%;
+            padding: 50px 70px 50px 70px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card b {
+            color: #556987;
+            margin: 20px 0;
+        }
+
+        .form label,
+        input {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .form input {
+            height: 35px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1.5px solid #ccc;
+        }
+
+        .form button {
+            margin-left: 0;
+            height: 40px;
+            width: 100%;
+        }
+
+        .or {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+
+        .btns {
+            background-color: #fff;
+            color: #556987;
+            border: 1.5px solid #ccc;
+            height: 40px;
+            margin-bottom: 15px;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .wave svg {
+            width: 100%;
+        }
+
+        #or {
+            color: #556987;
+            position: relative;
+        }
+
+        #or::before {
+            content: "";
+            position: absolute;
+            right: 25px;
+            top: 5px;
+            background-color: #ccc;
+            height: 0.5px;
+            width: 130px;
+        }
+
+        #or::after {
+            content: "";
+            position: absolute;
+            left: 25px;
+            top: 5px;
+            border: none;
+            background-color: #ccc;
+            height: 0.5px;
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="flex.svg" alt="Logo Image">
+        </div>
+        <nav>
+            <ul>
+                <li>Product</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+            </ul>
+        </nav>
+        <div class="login">
+            <p>Log In</p>
+            <button>Sign Up</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="title">
+            <h1 style="font-size: 52px; color: #2a3342;">A small business
+                is only as good
+                as its tools.</h1>
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisng.</p>
+            <p class="li"><img src="circle.png" alt="" height="15px" width="15px"> Mauris pellentesque congue libero nec
+            </p>
+            <p class="li"><img src="circle.png" alt="" height="15px" width="15px"> Suspendisse mollis tincidunt </p>
+            <p class="li"><img src="circle.png" alt="" height="15px" width="15px"> Praesent varius justo vel justo
+                pulvinar</p>
+        </div>
+
+        <div class="card">
+            <h2>Join our community</h2>
+            <b>Start your free trial</b>
+            <div class="form">
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="Enter your email address">
+                    <button>Get Started</button>
+                </form>
+            </div>
+            <div class="or">
+                <span id="or">OR</span>
+            </div>
+            <div>
+                <button class="btns">Sign in with Google</button>
+                <button class="btns">Sign in with Google</button>
+                <button class="btns">Sign in with Apple</button>
+            </div>
+            <div>
+                <p style="font-size: 13px; margin-top: 10px; color: #556987;">Already have an account?
+                    <b style="color: #22c55e;">Sign In</b>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="62" viewBox="0 0 1440 62" fill="none">
+            <path
+                d="M0 34.5227H349.922C606.664 34.5227 859.771 0 1080 0C1300.23 0 1440 34.5227 1440 34.5227V62H0V34.5227Z"
+                fill="#fff" />
+        </svg>
+    </div>
+</body>
+
+</html>
